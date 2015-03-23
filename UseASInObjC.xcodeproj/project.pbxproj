@@ -12,6 +12,10 @@
 		B9B9B2FE1AC004C3005FC577 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B9B2FD1AC004C3005FC577 /* Images.xcassets */; };
 		B9B9B3011AC004C4005FC577 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B9B2FF1AC004C4005FC577 /* MainMenu.xib */; };
 		B9B9B30D1AC004C4005FC577 /* UseASInObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B9B30C1AC004C4005FC577 /* UseASInObjCTests.m */; };
+		B9B9B3251AC03DA1005FC577 /* test_int.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B9B9B3211AC03DA1005FC577 /* test_int.scpt */; };
+		B9B9B3271AC03DA1005FC577 /* test_rec.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B9B9B3231AC03DA1005FC577 /* test_rec.scpt */; };
+		B9B9B3281AC03DA1005FC577 /* test_str.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B9B9B3241AC03DA1005FC577 /* test_str.scpt */; };
+		B9B9B32A1AC03EEC005FC577 /* test_list.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B9B9B3291AC03EEC005FC577 /* test_list.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 		B9B9B3061AC004C4005FC577 /* UseASInObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseASInObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9B30B1AC004C4005FC577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9B9B30C1AC004C4005FC577 /* UseASInObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseASInObjCTests.m; sourceTree = "<group>"; };
+		B9B9B3211AC03DA1005FC577 /* test_int.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_int.scpt; sourceTree = "<group>"; };
+		B9B9B3231AC03DA1005FC577 /* test_rec.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_rec.scpt; sourceTree = "<group>"; };
+		B9B9B3241AC03DA1005FC577 /* test_str.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_str.scpt; sourceTree = "<group>"; };
+		B9B9B3291AC03EEC005FC577 /* test_list.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_list.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 				B9B9B2F91AC004C3005FC577 /* AppDelegate.m */,
 				B9B9B2FD1AC004C3005FC577 /* Images.xcassets */,
 				B9B9B2FF1AC004C4005FC577 /* MainMenu.xib */,
+				B9B9B3161AC005FB005FC577 /* Resource */,
 				B9B9B2F61AC004C3005FC577 /* Supporting Files */,
 			);
 			path = UseASInObjC;
@@ -109,6 +118,17 @@
 				B9B9B30B1AC004C4005FC577 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9B9B3161AC005FB005FC577 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B9B9B3291AC03EEC005FC577 /* test_list.scpt */,
+				B9B9B3211AC03DA1005FC577 /* test_int.scpt */,
+				B9B9B3231AC03DA1005FC577 /* test_rec.scpt */,
+				B9B9B3241AC03DA1005FC577 /* test_str.scpt */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +211,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B9B3271AC03DA1005FC577 /* test_rec.scpt in Resources */,
 				B9B9B2FE1AC004C3005FC577 /* Images.xcassets in Resources */,
+				B9B9B3251AC03DA1005FC577 /* test_int.scpt in Resources */,
+				B9B9B32A1AC03EEC005FC577 /* test_list.scpt in Resources */,
 				B9B9B3011AC004C4005FC577 /* MainMenu.xib in Resources */,
+				B9B9B3281AC03DA1005FC577 /* test_str.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +303,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -315,9 +339,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
@@ -328,6 +352,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UseASInObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,6 +364,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UseASInObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
